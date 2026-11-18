@@ -1,1 +1,119 @@
-#summary html file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Night Summary</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="summary-page">
+
+        <header class="summary-header">
+            <h1>Movie Night Summary</h1>
+            <p>Your movie night plan is ready!</p>
+        </header>
+
+
+        <!-- Final shareable summary card -->
+        <section id="summary-card" class="summary-card">
+
+            <!-- Event information -->
+            <div class="summary-section">
+                <h2>Event Details</h2>
+
+                <p>
+                    <strong>Event Type:</strong>
+                    <span id="summary-event-type">Not selected</span>
+                </p>
+
+                <p>
+                    <strong>Number of People:</strong>
+                    <span id="summary-people">0</span>
+                </p>
+
+                <p>
+                    <strong>Dietary Restrictions:</strong>
+                    <span id="summary-diet">None</span>
+                </p>
+            </div>
+
+
+            <!-- Selected movies -->
+            <div class="summary-section">
+                <h2>Selected Movies</h2>
+
+                <div id="summary-movies">
+                    <p>No movies selected yet.</p>
+                </div>
+
+                <p>
+                    <strong>Total Runtime:</strong>
+                    <span id="summary-runtime">0 hr 0 min</span>
+                </p>
+            </div>
+
+
+            <!-- Break information -->
+            <div class="summary-section">
+                <h2>Planned Breaks</h2>
+
+                <p id="summary-breaks">
+                    No breaks planned.
+                </p>
+            </div>
+
+
+            <!-- Food recommendations -->
+            <div class="summary-section">
+                <h2>Snack Suggestions</h2>
+
+                <div id="summary-food">
+                    <p>No snack recommendations yet.</p>
+                </div>
+
+                <p>
+                    <strong>Estimated Snack Budget:</strong>
+                    <span id="summary-budget">$0.00</span>
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Page buttons -->
+        <div class="summary-actions">
+
+            <button id="back-to-movies" type="button">
+                Back to Movie Selection
+            </button>
+
+            <button id="share-summary" type="button">
+                Copy Summary
+            </button>
+
+            <button id="restart-plan" type="button">
+                Start Over
+            </button>
+
+        </div>
+
+
+        <p id="share-message"></p>
+
+    </main>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Role #3 scripts -->
+    <script src="food.js"></script>
+    <script src="summary.js"></script>
+
+</body>
+</html>
